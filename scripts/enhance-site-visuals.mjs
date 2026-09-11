@@ -42,6 +42,48 @@ function visualFor(relativePath) {
   };
 }
 
+function stripTags(value) {
+  return value
+    .replace(/<!--.*?-->/g, "")
+    .replace(/<[^>]+>/g, "")
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", "\"")
+    .trim();
+}
+
+function improveArticleStructure(html) {
+  const copyStart = html.indexOf('<div class="article-copy">');
+  if (copyStart < 0) return html;
+
+  const firstHeading = html.indexOf("<h2", copyStart);
+  if (firstHeading > copyStart && !html.slice(copyStart, firstHeading).includes('class="article-summary"')) {
+    const contentStart = copyStart + '<div class="article-copy">'.length;
+    const introduction = html.slice(contentStart, firstHeading);
+    if (introduction.includes("<p")) {
+      html = `${html.slice(0, contentStart)}<section class="article-summary">${introduction}</section>${html.slice(firstHeading)}`;
+    }
+  }
+
+  const articleEnd = html.indexOf('<aside class="article-aside">', copyStart);
+  if (articleEnd < 0) return html;
+  let sectionNumber = 0;
+  const headings = [];
+  const article = html.slice(copyStart, articleEnd).replace(/<h2(?:\s+id="section-\d+")?>([\s\S]*?)<\/h2>/g, (match, label) => {
+    sectionNumber += 1;
+    const id = `section-${sectionNumber}`;
+    headings.push({ id, label: stripTags(label) });
+    return `<h2 id="${id}">${label}</h2>`;
+  });
+  html = `${html.slice(0, copyStart)}${article}${html.slice(articleEnd)}`;
+
+  if (headings.length >= 2) {
+    const links = headings.slice(0, 12).map(({ id, label }) => `<a href="#${id}">${label}</a>`).join("");
+    const toc = `<nav class="visual-toc" aria-label="この記事の目次"><span>この記事の内容</span>${links}</nav>`;
+    html = html.replace(/<aside class="article-aside">(?:<nav class="visual-toc"[\s\S]*?<\/nav>)?/, `<aside class="article-aside">${toc}`);
+  }
+  return html;
+}
+
 for (const file of await htmlFiles(DOCS)) {
   const path = relative(DOCS, file).split(sep).join("/");
   let html = await readFile(file, "utf8");
@@ -56,6 +98,7 @@ for (const file of await htmlFiles(DOCS)) {
     const figure = `<figure class="visual-banner"><img src="${BASE}/assets/generated/${visual.file}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async"/><figcaption>${visual.caption}</figcaption></figure>`;
     html = html.replace(/(<section class="page-hero"[\s\S]*?<\/section>)/, `$1${figure}`);
   }
+  html = improveArticleStructure(html);
   await writeFile(file, html, "utf8");
 }
 
