@@ -1,5 +1,7 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 
 const ROOT = resolve(import.meta.dirname, "..");
 const OUTPUT = resolve(ROOT, "docs");
@@ -9,6 +11,7 @@ const BASE_PATH = "/aqua-healing";
 const sitemap = await readFile(resolve(ROOT, "sitemap.xml"), "utf8");
 const pageUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 const assetUrls = new Set();
+const execFileAsync = promisify(execFile);
 
 function outputPathForPage(urlString) {
   const { pathname } = new URL(urlString);
@@ -85,5 +88,7 @@ await Promise.all([
   writeFile(resolve(OUTPUT, ".nojekyll"), "", "utf8"),
   writeFile(resolve(OUTPUT, "404.html"), await readFile(resolve(OUTPUT, "index.html"), "utf8"), "utf8")
 ]);
+
+await execFileAsync(process.execPath, [resolve(ROOT, "scripts", "enhance-site-visuals.mjs")]);
 
 console.log(`Created GitHub Pages snapshot: ${pageUrls.length} pages, ${assetUrls.size} local assets.`);
