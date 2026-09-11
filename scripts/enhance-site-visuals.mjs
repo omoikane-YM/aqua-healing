@@ -112,6 +112,19 @@ const explainers = [
   }
 ];
 
+function addContextualLinks(html) {
+  const bacteriaArticle = `${BASE}/アクアリウム用品/バクテリア剤`;
+  return html
+    .replace(
+      /<p class="article-compact-line">(?:<a class="contextual-text-link"[^>]*>)?👉 私が実際におすすめしているバクテリア剤はこちら(?: <span aria-hidden="true">→<\/span>)?(?:<\/a>)?<\/p>/,
+      `<p class="article-compact-line"><a class="contextual-text-link" href="${bacteriaArticle}">👉 私が実際におすすめしているバクテリア剤はこちら <span aria-hidden="true">→</span></a></p>`
+    )
+    .replace(
+      /<p>詳しいレビューや使い方は、(?:<a class="contextual-text-link"[^>]*>)?こちらの記事(?:<\/a>)?でも紹介しています。<\/p>/,
+      `<p>詳しいレビューや使い方は、<a class="contextual-text-link" href="${bacteriaArticle}">こちらの記事</a>でも紹介しています。</p>`
+    );
+}
+
 function improveArticleStructure(html) {
   const copyStart = html.indexOf('<div class="article-copy">');
   if (copyStart < 0) return html;
@@ -168,6 +181,7 @@ for (const file of await htmlFiles(DOCS)) {
     html = html.replace(/(<section class="page-hero"[\s\S]*?<\/section>)/, `$1${figure}`);
   }
   html = improveArticleStructure(html);
+  html = addContextualLinks(html);
   await writeFile(file, html, "utf8");
 }
 

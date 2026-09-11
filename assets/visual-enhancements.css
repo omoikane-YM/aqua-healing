@@ -81,6 +81,21 @@
   line-height: 1.95;
 }
 
+.contextual-text-link {
+  color: #08787a;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(8, 120, 122, .35);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.contextual-text-link:hover,
+.contextual-text-link:focus-visible {
+  color: #055b5d;
+  text-decoration-color: currentColor;
+}
+
 .article-summary {
   margin: 0 0 44px;
   padding: 26px 30px 22px;
