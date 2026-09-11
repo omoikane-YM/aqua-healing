@@ -14,3 +14,6 @@
 - 変更内容: 正式商品データを基準にAmazon URLの到達性・リダイレクト・最終ドメインを低頻度で監視し、結果を4段階に分類する機能を追加。
 - 対象ファイル: `affiliate-products.json`, `scripts/check-amazon-links.mjs`, `scripts/import-existing-amazon-links.mjs`, `.github/workflows/check-amazon-links.yml`, `AGENTS.md`, `AFFILIATE_RULES.md`, `CHECKLIST.md`
 - 理由: Amazonリンクの異常を毎週検出し、明確なBROKENまたは3回連続UNKNOWNだけを重複なしでIssue通知するため。既存URLは変更しない。
+- 変更内容: GitHub公式ActionsをNode.js 24対応版へ更新。
+- 対象ファイル: `.github/workflows/check-amazon-links.yml`, `.github/workflows/validate.yml`
+- 理由: GitHub ActionsのNode.js 20廃止警告を解消し、長期運用の安定性を確保するため。

@@ -19,15 +19,15 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Restore consecutive-result state
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: reports/amazon-link-state.json
           key: amazon-link-state-${{ github.run_id }}
@@ -38,7 +38,7 @@ jobs:
         run: node scripts/check-amazon-links.mjs
 
       - name: Upload human-readable reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: amazon-link-check-${{ github.run_id }}
           path: |
@@ -47,7 +47,7 @@ jobs:
           retention-days: 90
 
       - name: Save consecutive-result state
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: reports/amazon-link-state.json
           key: amazon-link-state-${{ github.run_id }}
