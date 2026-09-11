@@ -6,6 +6,33 @@ const DOCS = resolve(ROOT, "docs");
 const BASE = "/aqua-healing";
 const STYLE_HREF = `${BASE}/assets/visual-enhancements.css`;
 const SOURCE_ASSETS = resolve(ROOT, "assets");
+const SITE_URL = "https://omoikane-ym.github.io/aqua-healing/";
+const siteIdentityMarkup = `<script type="application/ld+json" data-site-identity>${JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}#website`,
+      url: SITE_URL,
+      name: "Aqua Healing",
+      alternateName: "アクアヒーリング",
+      inLanguage: "ja"
+    },
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}#organization`,
+      name: "Aqua Healing",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}favicon.png`,
+        contentUrl: `${SITE_URL}favicon.png`,
+        width: 512,
+        height: 512
+      }
+    }
+  ]
+})}</script>`;
 
 const visuals = [
   { match: "メダカの病気異常", file: "health-medaka.jpg", alt: "水槽内を泳ぐメダカを観察するイメージ", caption: "メダカの状態をやさしく観察" },
@@ -175,6 +202,9 @@ for (const file of await htmlFiles(DOCS)) {
 
   if (path === "index.html" || path === "404.html") {
     html = html.replace('class="hero"', 'class="hero visual-home-hero"');
+    if (path === "index.html" && !html.includes("data-site-identity")) {
+      html = html.replace("</head>", `${siteIdentityMarkup}</head>`);
+    }
   } else if (!html.includes('class="visual-banner"')) {
     const visual = visualFor(decodeURIComponent(path));
     const figure = `<figure class="visual-banner"><img src="${BASE}/assets/generated/${visual.file}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async"/><figcaption>${visual.caption}</figcaption></figure>`;
