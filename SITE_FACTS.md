@@ -8,7 +8,8 @@
 - ブランチ: `main`
 - 確認時コミット: `8b04a28` (`Initial commit`)
 - リポジトリ内の既存ファイル: `README.md` のみ
-- 公開中サイトの URL: `https://aqua-healing.gdaye311.chatgpt.site/`
+- GitHub Pages URL: `https://omoikane-ym.github.io/aqua-healing/`
+- 移行元サイト URL: `https://aqua-healing.gdaye311.chatgpt.site/`
 
 ## サイト名
 
@@ -57,7 +58,7 @@ aqua-healing（リポジトリ名および `README.md` の見出しから確認�
 - canonical: トップページでは確認できない
 - `robots.txt`: 全クローラーを許可し、公開サイトの `sitemap.xml` を指定
 - `sitemap.xml`: 44 URL を掲載
-- 公開基盤: `chatgpt.site`。GitHub Pages への接続は未設定
+- 公開基盤: GitHub Pages（`main` ブランチの `/docs`）。移行元の `chatgpt.site` は変更していない
 
 ## 更新時の注意
 

@@ -3,7 +3,8 @@
   "site": {
     "name": "aqua-healing",
     "description": "実際の飼育経験をもとに、メダカ・水草・アクアリウム用品の選び方と育て方を初心者にも分かりやすく紹介します。",
-    "publicUrl": "https://aqua-healing.gdaye311.chatgpt.site/",
+    "publicUrl": "https://omoikane-ym.github.io/aqua-healing/",
+    "migrationSourceUrl": "https://aqua-healing.gdaye311.chatgpt.site/",
     "operatorDisplayName": null
   },
   "affiliate": {
@@ -25,6 +26,6 @@
     "sourceRepository": "https://github.com/omoikane-YM/aqua-healing",
     "sourceBranch": "main",
     "sourceCommit": "8b04a28",
-    "note": "Repository contained only README.md. Public-site facts were verified at the publicUrl; null and unverified values must not be guessed."
+    "note": "The GitHub Pages site is a verified static snapshot of migrationSourceUrl; null and unverified values must not be guessed."
   }
 }

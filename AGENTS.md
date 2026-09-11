@@ -77,3 +77,10 @@ Amazon 関連の詳細は `AFFILIATE_RULES.md` に従う。
 - GitHub Actions には必要最小限の権限だけを与える。
 - 不要な外部 Action や依存パッケージを追加しない。
 - 既存の正常な公開設定を、検証なしに全面書き換えない。
+
+## GitHub Pages スナップショット
+
+- GitHub Pages用の公開ファイルは `docs/` に置く。
+- `docs/` を更新するときは `node scripts/snapshot-public-site.mjs` を明示的に実行し、定期実行で公開サイトを自動スクレイピングしない。
+- スナップショット処理はAmazon URL、商品文章、画像URLを変更しない。
+- 生成後は `docs/sitemap.xml`、`docs/robots.txt`、内部リンク、モバイル表示、Amazonリンク件数を確認する。

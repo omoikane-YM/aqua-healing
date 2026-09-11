@@ -17,3 +17,9 @@
 - 変更内容: GitHub公式ActionsをNode.js 24対応版へ更新。
 - 対象ファイル: `.github/workflows/check-amazon-links.yml`, `.github/workflows/validate.yml`
 - 理由: GitHub ActionsのNode.js 20廃止警告を解消し、長期運用の安定性を確保するため。
+- 変更内容: 公開中の44ページをGitHub Pages用の静的サイトとして `docs/` に生成するスナップショット処理を追加。
+- 対象ファイル: `scripts/snapshot-public-site.mjs`, `docs/`, `AGENTS.md`
+- 理由: 現在の表示・文章・画像・Amazonリンクを維持したまま、GitHub管理の公開サイトを作成するため。
+- 変更内容: GitHub Pages URL、サイトマップURL、公開ディレクトリを正式情報とREADMEへ反映。
+- 対象ファイル: `README.md`, `SITE_FACTS.md`, `site-facts.json`
+- 理由: GitHub Pages版を正式なGitHub管理サイトとして公開するため。
