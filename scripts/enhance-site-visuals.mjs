@@ -7,6 +7,7 @@ const BASE = "/aqua-healing";
 const STYLE_HREF = `${BASE}/assets/visual-enhancements.css`;
 const SOURCE_ASSETS = resolve(ROOT, "assets");
 const SITE_URL = "https://omoikane-ym.github.io/aqua-healing/";
+const GOOGLE_SITE_VERIFICATION = "tyw1nVZOuPP1l_J-RyQC5CUH0oBVbeXsMvXVX2x2E8A";
 const siteIdentityMarkup = `<script type="application/ld+json" data-site-identity>${JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
@@ -196,6 +197,10 @@ function improveArticleStructure(html) {
 for (const file of await htmlFiles(DOCS)) {
   const path = relative(DOCS, file).split(sep).join("/");
   let html = await readFile(file, "utf8");
+  html = html.replace(
+    /<meta name="google-site-verification" content="[^"]*"\s*\/?>/g,
+    `<meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATION}"/>`
+  );
   if (!html.includes(STYLE_HREF)) {
     html = html.replace("</head>", `<link rel="stylesheet" href="${STYLE_HREF}"/></head>`);
   }
