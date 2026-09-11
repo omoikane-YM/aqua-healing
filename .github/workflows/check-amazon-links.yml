@@ -1,0 +1,66 @@
+name: Check Amazon affiliate links
+
+on:
+  schedule:
+    - cron: "17 18 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: amazon-link-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore consecutive-result state
+        uses: actions/cache/restore@v4
+        with:
+          path: reports/amazon-link-state.json
+          key: amazon-link-state-${{ github.run_id }}
+          restore-keys: amazon-link-state-
+
+      - name: Check Amazon links
+        id: check
+        run: node scripts/check-amazon-links.mjs
+
+      - name: Upload human-readable reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: amazon-link-check-${{ github.run_id }}
+          path: |
+            reports/amazon-link-check.json
+            reports/amazon-link-check.md
+          retention-days: 90
+
+      - name: Save consecutive-result state
+        uses: actions/cache/save@v4
+        with:
+          path: reports/amazon-link-state.json
+          key: amazon-link-state-${{ github.run_id }}
+
+      - name: Create one deduplicated issue when action is required
+        if: steps.check.outputs.issue_required == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_TITLE: Amazonリンク切れ・要確認項目を検出
+        run: |
+          existing="$(gh issue list --state open --search "$ISSUE_TITLE in:title" --json number --jq '.[0].number // empty')"
+          if [ -z "$existing" ]; then
+            gh issue create --title "$ISSUE_TITLE $(date -u +%F)" --body-file reports/amazon-link-issue.md
+          else
+            echo "Open monitoring issue #$existing already exists; skipping duplicate creation."
+          fi

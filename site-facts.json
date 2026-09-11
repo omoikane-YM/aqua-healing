@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "site": {
+    "name": "aqua-healing",
+    "description": "実際の飼育経験をもとに、メダカ・水草・アクアリウム用品の選び方と育て方を初心者にも分かりやすく紹介します。",
+    "publicUrl": "https://aqua-healing.gdaye311.chatgpt.site/",
+    "operatorDisplayName": null
+  },
+  "affiliate": {
+    "amazonParticipation": "verified-by-public-disclosure",
+    "disclosureText": "Amazonのアソシエイトとして、Aqua Healingは適格販売により収入を得ています。",
+    "associateId": null,
+    "productDataFile": "affiliate-products.json",
+    "monitoredProductUrlCount": 159
+  },
+  "contact": null,
+  "socialLinks": [],
+  "legal": {
+    "privacyPolicy": "present-at-/プライバシーポリシー",
+    "disclaimer": "unverified"
+  },
+  "commonMessages": [],
+  "verification": {
+    "checkedAt": "2026-09-11",
+    "sourceRepository": "https://github.com/omoikane-YM/aqua-healing",
+    "sourceBranch": "main",
+    "sourceCommit": "8b04a28",
+    "note": "Repository contained only README.md. Public-site facts were verified at the publicUrl; null and unverified values must not be guessed."
+  }
+}

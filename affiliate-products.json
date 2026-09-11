@@ -1,0 +1,1278 @@
+{
+  "schema_version": 1,
+  "source": "One-time inventory from the published site; monitoring reads this file and does not scrape HTML.",
+  "products": [
+    {
+      "id": "existing-amazon-link-001",
+      "title": "既存Amazonリンク 001",
+      "amazon_url": "https://link.amazon/B000UI7l9",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-002",
+      "title": "既存Amazonリンク 002",
+      "amazon_url": "https://link.amazon/B001yCGGD",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-003",
+      "title": "既存Amazonリンク 003",
+      "amazon_url": "https://link.amazon/B0021X8TX",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-004",
+      "title": "既存Amazonリンク 004",
+      "amazon_url": "https://link.amazon/B004vRUMx",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AE%E3%82%B3%E3%82%B1%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-005",
+      "title": "既存Amazonリンク 005",
+      "amazon_url": "https://link.amazon/B005bSLCQ",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-006",
+      "title": "既存Amazonリンク 006",
+      "amazon_url": "https://link.amazon/B008dWrBQ",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E5%89%A4",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-007",
+      "title": "既存Amazonリンク 007",
+      "amazon_url": "https://link.amazon/B00B5Unyu",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-008",
+      "title": "既存Amazonリンク 008",
+      "amazon_url": "https://link.amazon/B00fWnrSg",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-009",
+      "title": "既存Amazonリンク 009",
+      "amazon_url": "https://link.amazon/B00jHSjj6",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%99%BD%E7%82%B9%E7%97%85%E7%97%87%E7%8A%B6%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%88%86%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-010",
+      "title": "既存Amazonリンク 010",
+      "amazon_url": "https://link.amazon/B00orJ46H",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-011",
+      "title": "既存Amazonリンク 011",
+      "amazon_url": "https://link.amazon/B010WhtSd",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-012",
+      "title": "既存Amazonリンク 012",
+      "amazon_url": "https://link.amazon/B01assC2e",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-013",
+      "title": "既存Amazonリンク 013",
+      "amazon_url": "https://link.amazon/B01C3D36v",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%87%9D%E5%AD%90%E3%81%AE%E8%82%B2%E3%81%A6%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-014",
+      "title": "既存Amazonリンク 014",
+      "amazon_url": "https://link.amazon/B01KdYLBV",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-015",
+      "title": "既存Amazonリンク 015",
+      "amazon_url": "https://link.amazon/B01rkBzwA",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BCled%E3%83%A9%E3%82%A4%E3%83%88",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-016",
+      "title": "既存Amazonリンク 016",
+      "amazon_url": "https://link.amazon/B01YLJcPD",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E5%BA%95%E5%BA%8A",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-017",
+      "title": "既存Amazonリンク 017",
+      "amazon_url": "https://link.amazon/B01Z7BkAR",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-018",
+      "title": "既存Amazonリンク 018",
+      "amazon_url": "https://link.amazon/B026BS6W6",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AE%E6%B0%B4%E8%B3%AA%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-019",
+      "title": "既存Amazonリンク 019",
+      "amazon_url": "https://link.amazon/B02mfr0nU",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AB%E7%8F%BE%E3%82%8C%E3%82%8B%E5%AF%84%E7%94%9F%E8%99%AB%E5%AE%B3%E8%99%AB%E3%81%BE%E3%81%A8%E3%82%81%E5%8E%9F%E5%9B%A0%E5%AE%B3%E5%AF%BE%E7%AD%96%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-020",
+      "title": "既存Amazonリンク 020",
+      "amazon_url": "https://link.amazon/B033L8MsS",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E6%B0%B4%E3%82%AB%E3%83%93%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-021",
+      "title": "既存Amazonリンク 021",
+      "amazon_url": "https://link.amazon/B03AUhvWj",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E7%85%A7%E6%98%8E%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-022",
+      "title": "既存Amazonリンク 022",
+      "amazon_url": "https://link.amazon/B03DBmn0B",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%8C%E6%AD%BB%E3%82%93%E3%81%A7%E3%81%97%E3%81%BE%E3%81%86%E5%8E%9F%E5%9B%A0",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-023",
+      "title": "既存Amazonリンク 023",
+      "amazon_url": "https://link.amazon/B03fGKLhz",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E5%86%AC%E8%B6%8A%E3%81%97%E5%A4%8F%E8%B6%8A%E3%81%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-024",
+      "title": "既存Amazonリンク 024",
+      "amazon_url": "https://link.amazon/B03lCTZir",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-025",
+      "title": "既存Amazonリンク 025",
+      "amazon_url": "https://link.amazon/B03qe3seh",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-026",
+      "title": "既存Amazonリンク 026",
+      "amazon_url": "https://link.amazon/B03vyRXCj",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%87%9D%E5%AD%90%E3%81%AE%E8%82%B2%E3%81%A6%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-027",
+      "title": "既存Amazonリンク 027",
+      "amazon_url": "https://link.amazon/B03X4kKJs",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E7%85%A7%E6%98%8E%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-028",
+      "title": "既存Amazonリンク 028",
+      "amazon_url": "https://link.amazon/B03xjB2qu",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-029",
+      "title": "既存Amazonリンク 029",
+      "amazon_url": "https://link.amazon/B03ZRsqx5",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E5%BA%95%E5%BA%8A",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-030",
+      "title": "既存Amazonリンク 030",
+      "amazon_url": "https://link.amazon/B041MfLXB",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-031",
+      "title": "既存Amazonリンク 031",
+      "amazon_url": "https://link.amazon/B048klCOV",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E6%B0%B4%E6%8F%9B%E3%81%88%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-032",
+      "title": "既存Amazonリンク 032",
+      "amazon_url": "https://link.amazon/B04AjAhrS",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E5%B0%BE%E3%81%90%E3%81%95%E3%82%8C%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-033",
+      "title": "既存Amazonリンク 033",
+      "amazon_url": "https://link.amazon/B04AOrilD",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-034",
+      "title": "既存Amazonリンク 034",
+      "amazon_url": "https://link.amazon/B04Ke9yj6",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BCled%E3%83%A9%E3%82%A4%E3%83%88",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-035",
+      "title": "既存Amazonリンク 035",
+      "amazon_url": "https://link.amazon/B04oOzS8W",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AE%E6%B0%B4%E8%B3%AA%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-036",
+      "title": "既存Amazonリンク 036",
+      "amazon_url": "https://link.amazon/B04QAXgOC",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-037",
+      "title": "既存Amazonリンク 037",
+      "amazon_url": "https://link.amazon/B04REYHVs",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%A9%B4%E3%81%82%E3%81%8D%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-038",
+      "title": "既存Amazonリンク 038",
+      "amazon_url": "https://link.amazon/B051eWDRb",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-039",
+      "title": "既存Amazonリンク 039",
+      "amazon_url": "https://link.amazon/B051j8uVi",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E6%B0%B4%E3%82%AB%E3%83%93%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-040",
+      "title": "既存Amazonリンク 040",
+      "amazon_url": "https://link.amazon/B05I3cVcR",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-041",
+      "title": "既存Amazonリンク 041",
+      "amazon_url": "https://link.amazon/B05jO2Myh",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E6%B0%B4%E6%8F%9B%E3%81%88%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-042",
+      "title": "既存Amazonリンク 042",
+      "amazon_url": "https://link.amazon/B05k798q7",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-043",
+      "title": "既存Amazonリンク 043",
+      "amazon_url": "https://link.amazon/B05KbwIdg",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-044",
+      "title": "既存Amazonリンク 044",
+      "amazon_url": "https://link.amazon/B05Lj8ASQ",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-045",
+      "title": "既存Amazonリンク 045",
+      "amazon_url": "https://link.amazon/B05OovAjY",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-046",
+      "title": "既存Amazonリンク 046",
+      "amazon_url": "https://link.amazon/B068W05bi",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-047",
+      "title": "既存Amazonリンク 047",
+      "amazon_url": "https://link.amazon/B06bPhKA2",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-048",
+      "title": "既存Amazonリンク 048",
+      "amazon_url": "https://link.amazon/B06C5N4Js",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-049",
+      "title": "既存Amazonリンク 049",
+      "amazon_url": "https://link.amazon/B06FlW9nL",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-050",
+      "title": "既存Amazonリンク 050",
+      "amazon_url": "https://link.amazon/B06HCshQw",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E8%B5%A4%E6%96%91%E7%97%85%E9%B0%AD%E8%B5%A4%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-051",
+      "title": "既存Amazonリンク 051",
+      "amazon_url": "https://link.amazon/B06JrhIBu",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E5%89%A4",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-052",
+      "title": "既存Amazonリンク 052",
+      "amazon_url": "https://link.amazon/B06pRxgbI",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-053",
+      "title": "既存Amazonリンク 053",
+      "amazon_url": "https://link.amazon/B06QN9qB5",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-054",
+      "title": "既存Amazonリンク 054",
+      "amazon_url": "https://link.amazon/B06vjAdaa",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AB%E7%8F%BE%E3%82%8C%E3%82%8B%E5%AF%84%E7%94%9F%E8%99%AB%E5%AE%B3%E8%99%AB%E3%81%BE%E3%81%A8%E3%82%81%E5%8E%9F%E5%9B%A0%E5%AE%B3%E5%AF%BE%E7%AD%96%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-055",
+      "title": "既存Amazonリンク 055",
+      "amazon_url": "https://link.amazon/B06zar62s",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-056",
+      "title": "既存Amazonリンク 056",
+      "amazon_url": "https://link.amazon/B073a7ozV",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E5%B0%BE%E3%81%90%E3%81%95%E3%82%8C%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-057",
+      "title": "既存Amazonリンク 057",
+      "amazon_url": "https://link.amazon/B076AR3z3",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E7%85%A7%E6%98%8E%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-058",
+      "title": "既存Amazonリンク 058",
+      "amazon_url": "https://link.amazon/B07evnie0",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-059",
+      "title": "既存Amazonリンク 059",
+      "amazon_url": "https://link.amazon/B07FI2232",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-060",
+      "title": "既存Amazonリンク 060",
+      "amazon_url": "https://link.amazon/B07FyuqwP",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-061",
+      "title": "既存Amazonリンク 061",
+      "amazon_url": "https://link.amazon/B07O1FW5q",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%87%9D%E5%AD%90%E3%81%AE%E8%82%B2%E3%81%A6%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-062",
+      "title": "既存Amazonリンク 062",
+      "amazon_url": "https://link.amazon/B07Q3Ff6K",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E6%B0%B4%E6%8F%9B%E3%81%88%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-063",
+      "title": "既存Amazonリンク 063",
+      "amazon_url": "https://link.amazon/B07q5yWYS",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-064",
+      "title": "既存Amazonリンク 064",
+      "amazon_url": "https://link.amazon/B07r5BDPC",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-065",
+      "title": "既存Amazonリンク 065",
+      "amazon_url": "https://link.amazon/B07sjdVJT",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-066",
+      "title": "既存Amazonリンク 066",
+      "amazon_url": "https://link.amazon/B07VAwh3l",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-067",
+      "title": "既存Amazonリンク 067",
+      "amazon_url": "https://link.amazon/B07x0Gehd",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-068",
+      "title": "既存Amazonリンク 068",
+      "amazon_url": "https://link.amazon/B08CkflNA",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-069",
+      "title": "既存Amazonリンク 069",
+      "amazon_url": "https://link.amazon/B08e5szsF",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-070",
+      "title": "既存Amazonリンク 070",
+      "amazon_url": "https://link.amazon/B08Fn14a3",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-071",
+      "title": "既存Amazonリンク 071",
+      "amazon_url": "https://link.amazon/B08HPAaT3",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-072",
+      "title": "既存Amazonリンク 072",
+      "amazon_url": "https://link.amazon/B08MynQ6Y",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E8%B5%A4%E6%96%91%E7%97%85%E9%B0%AD%E8%B5%A4%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-073",
+      "title": "既存Amazonリンク 073",
+      "amazon_url": "https://link.amazon/B08nPQgfo",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-074",
+      "title": "既存Amazonリンク 074",
+      "amazon_url": "https://link.amazon/B08xP10Yg",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E5%89%A4",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-075",
+      "title": "既存Amazonリンク 075",
+      "amazon_url": "https://link.amazon/B09ENCdcU",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-076",
+      "title": "既存Amazonリンク 076",
+      "amazon_url": "https://link.amazon/B09fWvYI7",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-077",
+      "title": "既存Amazonリンク 077",
+      "amazon_url": "https://link.amazon/B09gotPUh",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E7%A7%81%E3%81%8C%E5%AE%9F%E9%9A%9B%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%A4%8C-%E7%B9%81%E6%AE%96%E6%88%90%E9%95%B7%E9%87%9D%E5%AD%90%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-078",
+      "title": "既存Amazonリンク 078",
+      "amazon_url": "https://link.amazon/B09oI8UaG",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-079",
+      "title": "既存Amazonリンク 079",
+      "amazon_url": "https://link.amazon/B09OThns9",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-080",
+      "title": "既存Amazonリンク 080",
+      "amazon_url": "https://link.amazon/B09QfPMFw",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%8C%E6%AD%BB%E3%82%93%E3%81%A7%E3%81%97%E3%81%BE%E3%81%86%E5%8E%9F%E5%9B%A0",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-081",
+      "title": "既存Amazonリンク 081",
+      "amazon_url": "https://link.amazon/B09RGypdR",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E5%BA%95%E5%BA%8A",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-082",
+      "title": "既存Amazonリンク 082",
+      "amazon_url": "https://link.amazon/B09y7HX0d",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E5%A1%A9%E6%B5%B4%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-083",
+      "title": "既存Amazonリンク 083",
+      "amazon_url": "https://link.amazon/B0a5Ax3wa",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E6%9D%BE%E3%81%8B%E3%81%95%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-084",
+      "title": "既存Amazonリンク 084",
+      "amazon_url": "https://link.amazon/B0aBXhlNx",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E5%88%9D%E5%BF%83%E8%80%85%E3%81%8C%E5%A4%B1%E6%95%97%E3%81%97%E3%81%AA%E3%81%84%E9%A3%BC%E3%81%84%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-085",
+      "title": "既存Amazonリンク 085",
+      "amazon_url": "https://link.amazon/B0aCIAd1h",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E5%89%A4",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-086",
+      "title": "既存Amazonリンク 086",
+      "amazon_url": "https://link.amazon/B0aLnjZ4a",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%99%BD%E7%82%B9%E7%97%85%E7%97%87%E7%8A%B6%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%88%86%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-087",
+      "title": "既存Amazonリンク 087",
+      "amazon_url": "https://link.amazon/B0aRWXvfL",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E5%86%AC%E8%B6%8A%E3%81%97%E5%A4%8F%E8%B6%8A%E3%81%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-088",
+      "title": "既存Amazonリンク 088",
+      "amazon_url": "https://link.amazon/B0aUC3Q0F",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-089",
+      "title": "既存Amazonリンク 089",
+      "amazon_url": "https://link.amazon/B0av3XbSu",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-090",
+      "title": "既存Amazonリンク 090",
+      "amazon_url": "https://link.amazon/B0ax2WkHl",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AE%E6%A4%8D%E3%81%88%E6%96%B9%E5%9B%BA%E5%AE%9A%E6%96%B9%E6%B3%95%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-091",
+      "title": "既存Amazonリンク 091",
+      "amazon_url": "https://link.amazon/B0b6Fh19F",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-092",
+      "title": "既存Amazonリンク 092",
+      "amazon_url": "https://link.amazon/B0b9yMLqs",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-093",
+      "title": "既存Amazonリンク 093",
+      "amazon_url": "https://link.amazon/B0bhU1SI4",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%99%BD%E7%82%B9%E7%97%85%E7%97%87%E7%8A%B6%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%88%86%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-094",
+      "title": "既存Amazonリンク 094",
+      "amazon_url": "https://link.amazon/B0bKqLLY9",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-095",
+      "title": "既存Amazonリンク 095",
+      "amazon_url": "https://link.amazon/B0bRdsnJz",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-096",
+      "title": "既存Amazonリンク 096",
+      "amazon_url": "https://link.amazon/B0c2Yccy0",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-097",
+      "title": "既存Amazonリンク 097",
+      "amazon_url": "https://link.amazon/B0cAUlXuf",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-098",
+      "title": "既存Amazonリンク 098",
+      "amazon_url": "https://link.amazon/B0cdnH2Ce",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E6%B0%B4%E3%82%AB%E3%83%93%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-099",
+      "title": "既存Amazonリンク 099",
+      "amazon_url": "https://link.amazon/B0cdQaUmO",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-100",
+      "title": "既存Amazonリンク 100",
+      "amazon_url": "https://link.amazon/B0ce9FUiy",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-101",
+      "title": "既存Amazonリンク 101",
+      "amazon_url": "https://link.amazon/B0clLR0OU",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AE%E6%B0%B4%E8%B3%AA%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-102",
+      "title": "既存Amazonリンク 102",
+      "amazon_url": "https://link.amazon/B0csWpVyc",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-103",
+      "title": "既存Amazonリンク 103",
+      "amazon_url": "https://link.amazon/B0czdCief",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-104",
+      "title": "既存Amazonリンク 104",
+      "amazon_url": "https://link.amazon/B0czeBlzk",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AE%E3%82%B3%E3%82%B1%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-105",
+      "title": "既存Amazonリンク 105",
+      "amazon_url": "https://link.amazon/B0dH4Qa7A",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E7%85%A7%E6%98%8E%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-106",
+      "title": "既存Amazonリンク 106",
+      "amazon_url": "https://link.amazon/B0dnq5GMo",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E9%A4%8C5%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-107",
+      "title": "既存Amazonリンク 107",
+      "amazon_url": "https://link.amazon/B0e2Ahp2p",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-108",
+      "title": "既存Amazonリンク 108",
+      "amazon_url": "https://link.amazon/B0e30VC0Q",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E6%B0%B4%E6%8F%9B%E3%81%88%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-109",
+      "title": "既存Amazonリンク 109",
+      "amazon_url": "https://link.amazon/B0eEpxDEo",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%99%BD%E7%82%B9%E7%97%85%E7%97%87%E7%8A%B6%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%88%86%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-110",
+      "title": "既存Amazonリンク 110",
+      "amazon_url": "https://link.amazon/B0eRrEkBf",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-111",
+      "title": "既存Amazonリンク 111",
+      "amazon_url": "https://link.amazon/B0etpEwtp",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-112",
+      "title": "既存Amazonリンク 112",
+      "amazon_url": "https://link.amazon/B0f87hcGi",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E6%B0%B4%E6%8F%9B%E3%81%88%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-113",
+      "title": "既存Amazonリンク 113",
+      "amazon_url": "https://link.amazon/B0fBIzRm6",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-114",
+      "title": "既存Amazonリンク 114",
+      "amazon_url": "https://link.amazon/B0fDKcf4x",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%A9%B4%E3%81%82%E3%81%8D%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-115",
+      "title": "既存Amazonリンク 115",
+      "amazon_url": "https://link.amazon/B0ffFeZ18",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-116",
+      "title": "既存Amazonリンク 116",
+      "amazon_url": "https://link.amazon/B0ffYoD28",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-117",
+      "title": "既存Amazonリンク 117",
+      "amazon_url": "https://link.amazon/B0fkPKtUb",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%87%9D%E5%AD%90%E3%81%AE%E8%82%B2%E3%81%A6%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-118",
+      "title": "既存Amazonリンク 118",
+      "amazon_url": "https://link.amazon/B0flO8emK",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%A9%B4%E3%81%82%E3%81%8D%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-119",
+      "title": "既存Amazonリンク 119",
+      "amazon_url": "https://link.amazon/B0fVeWX6y",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E8%B5%A4%E6%96%91%E7%97%85%E9%B0%AD%E8%B5%A4%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-120",
+      "title": "既存Amazonリンク 120",
+      "amazon_url": "https://link.amazon/B0fVxta1t",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-121",
+      "title": "既存Amazonリンク 121",
+      "amazon_url": "https://link.amazon/B0g0MYxmz",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-122",
+      "title": "既存Amazonリンク 122",
+      "amazon_url": "https://link.amazon/B0g4X3OwY",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-123",
+      "title": "既存Amazonリンク 123",
+      "amazon_url": "https://link.amazon/B0g7bw8f7",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E7%A7%81%E3%81%8C%E5%AE%9F%E9%9A%9B%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%A4%8C-%E7%B9%81%E6%AE%96%E6%88%90%E9%95%B7%E9%87%9D%E5%AD%90%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-124",
+      "title": "既存Amazonリンク 124",
+      "amazon_url": "https://link.amazon/B0g7qJ6Iw",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E3%82%A8%E3%83%93%E6%B0%B4%E6%A7%BD%E3%81%AB%E6%B0%B4%E8%8D%89%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-125",
+      "title": "既存Amazonリンク 125",
+      "amazon_url": "https://link.amazon/B0gfcv1cY",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-126",
+      "title": "既存Amazonリンク 126",
+      "amazon_url": "https://link.amazon/B0ggxxZ7E",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-127",
+      "title": "既存Amazonリンク 127",
+      "amazon_url": "https://link.amazon/B0ghETV1A",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-128",
+      "title": "既存Amazonリンク 128",
+      "amazon_url": "https://link.amazon/B0gjEkF3l",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-129",
+      "title": "既存Amazonリンク 129",
+      "amazon_url": "https://link.amazon/B0gltOsPh",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-130",
+      "title": "既存Amazonリンク 130",
+      "amazon_url": "https://link.amazon/B0gThWxPc",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E5%B0%BE%E3%81%90%E3%81%95%E3%82%8C%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-131",
+      "title": "既存Amazonリンク 131",
+      "amazon_url": "https://link.amazon/B0gtjierT",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E5%A1%A9%E6%B5%B4%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-132",
+      "title": "既存Amazonリンク 132",
+      "amazon_url": "https://link.amazon/B0hasYcvv",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E6%B0%B4%E6%8F%9B%E3%81%88%E6%96%B9%E6%B3%95",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-133",
+      "title": "既存Amazonリンク 133",
+      "amazon_url": "https://link.amazon/B0hdR6T0y",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-134",
+      "title": "既存Amazonリンク 134",
+      "amazon_url": "https://link.amazon/B0hkkYCGx",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-135",
+      "title": "既存Amazonリンク 135",
+      "amazon_url": "https://link.amazon/B0hMJv2gz",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E6%B0%B4%E3%82%AB%E3%83%93%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-136",
+      "title": "既存Amazonリンク 136",
+      "amazon_url": "https://link.amazon/B0hnlFPGE",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AB%E7%8F%BE%E3%82%8C%E3%82%8B%E5%AF%84%E7%94%9F%E8%99%AB%E5%AE%B3%E8%99%AB%E3%81%BE%E3%81%A8%E3%82%81%E5%8E%9F%E5%9B%A0%E5%AE%B3%E5%AF%BE%E7%AD%96%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-137",
+      "title": "既存Amazonリンク 137",
+      "amazon_url": "https://link.amazon/B0hPSskEM",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-138",
+      "title": "既存Amazonリンク 138",
+      "amazon_url": "https://link.amazon/B0hUldgbm",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E5%B0%BE%E3%81%90%E3%81%95%E3%82%8C%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-139",
+      "title": "既存Amazonリンク 139",
+      "amazon_url": "https://link.amazon/B0hUmZwgJ",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/co%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%A6%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E6%B0%B4%E8%8D%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-140",
+      "title": "既存Amazonリンク 140",
+      "amazon_url": "https://link.amazon/B0hVu4GDJ",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AE%E6%A4%8D%E3%81%88%E6%96%B9%E5%9B%BA%E5%AE%9A%E6%96%B9%E6%B3%95%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-141",
+      "title": "既存Amazonリンク 141",
+      "amazon_url": "https://link.amazon/B0hxVFfkx",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E6%B0%B4%E8%8D%89/%E6%B0%B4%E8%8D%89%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E7%85%A7%E6%98%8E%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-142",
+      "title": "既存Amazonリンク 142",
+      "amazon_url": "https://link.amazon/B0i6VsDPo",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E7%A7%81%E3%81%8C%E5%AE%9F%E9%9A%9B%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%A4%8C-%E7%B9%81%E6%AE%96%E6%88%90%E9%95%B7%E9%87%9D%E5%AD%90%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-143",
+      "title": "既存Amazonリンク 143",
+      "amazon_url": "https://link.amazon/B0i8KY5Vf",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-144",
+      "title": "既存Amazonリンク 144",
+      "amazon_url": "https://link.amazon/B0ieG3nkI",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-145",
+      "title": "既存Amazonリンク 145",
+      "amazon_url": "https://link.amazon/B0igStzaS",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-146",
+      "title": "既存Amazonリンク 146",
+      "amazon_url": "https://link.amazon/B0imFsWMO",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%AE%E3%82%B3%E3%82%B1%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-147",
+      "title": "既存Amazonリンク 147",
+      "amazon_url": "https://link.amazon/B0iNwTEwr",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E7%A7%81%E3%81%8C%E5%AE%9F%E9%9A%9B%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%A4%8C-%E7%B9%81%E6%AE%96%E6%88%90%E9%95%B7%E9%87%9D%E5%AD%90%E6%B0%B4%E6%A7%BD%E7%AE%A1%E7%90%86",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-148",
+      "title": "既存Amazonリンク 148",
+      "amazon_url": "https://link.amazon/B0iv22fj0",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BCled%E3%83%A9%E3%82%A4%E3%83%88",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-149",
+      "title": "既存Amazonリンク 149",
+      "amazon_url": "https://link.amazon/B0iWmLGhf",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E5%B0%BE%E3%81%90%E3%81%95%E3%82%8C%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-150",
+      "title": "既存Amazonリンク 150",
+      "amazon_url": "https://link.amazon/B0ix9t5jA",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%9C%AC%E5%BD%93%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%B9%E3%81%AB%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E5%93%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-151",
+      "title": "既存Amazonリンク 151",
+      "amazon_url": "https://link.amazon/B0iXvHlOe",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%A9%B4%E3%81%82%E3%81%8D%E7%97%85%E5%8E%9F%E5%9B%A0%E7%97%87%E7%8A%B6%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-152",
+      "title": "既存Amazonリンク 152",
+      "amazon_url": "https://link.amazon/B0iYtoHzn",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%81%A7%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E7%94%A8%E5%93%81%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AB%E3%82%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-153",
+      "title": "既存Amazonリンク 153",
+      "amazon_url": "https://link.amazon/B0j4hZgvy",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BCled%E3%83%A9%E3%82%A4%E3%83%88",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-154",
+      "title": "既存Amazonリンク 154",
+      "amazon_url": "https://link.amazon/B0j8UozFp",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E6%B0%B4%E6%A7%BD%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-155",
+      "title": "既存Amazonリンク 155",
+      "amazon_url": "https://link.amazon/B0j9jNViq",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E9%A3%BC%E8%82%B2%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E9%87%9D%E5%AD%90%E3%81%AE%E8%82%B2%E3%81%A6%E6%96%B9",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-156",
+      "title": "既存Amazonリンク 156",
+      "amazon_url": "https://link.amazon/B0jcxppsc",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E3%81%AE%E7%97%85%E6%B0%97%E7%95%B0%E5%B8%B8/%E7%99%BD%E7%82%B9%E7%97%85%E7%97%87%E7%8A%B6%E5%8E%9F%E5%9B%A0%E6%B2%BB%E7%99%82%E6%96%B9%E6%B3%95%E9%AD%9A%E7%97%85%E8%96%AC%E3%82%92%E5%88%86%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E8%A7%A3%E8%AA%AC",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-157",
+      "title": "既存Amazonリンク 157",
+      "amazon_url": "https://link.amazon/B0jeNDe6R",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BCled%E3%83%A9%E3%82%A4%E3%83%88",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-158",
+      "title": "既存Amazonリンク 158",
+      "amazon_url": "https://link.amazon/B0jjHJkRX",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%83%A1%E3%83%80%E3%82%AB%E7%94%A8%E5%93%81/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%83%A1%E3%83%80%E3%82%AB%E9%A3%BC%E8%82%B2%E3%82%BB%E3%83%83%E3%83%88%E3%81%8A%E3%81%99%E3%81%99%E3%82%815%E9%81%B8",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    },
+    {
+      "id": "existing-amazon-link-159",
+      "title": "既存Amazonリンク 159",
+      "amazon_url": "https://link.amazon/B0jk87yE5",
+      "source_page": "https://aqua-healing.gdaye311.chatgpt.site/%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%AA%E3%82%A6%E3%83%A0%E7%94%A8%E5%93%81/%E6%BF%BE%E9%81%8E%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%A8%E3%82%A2%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97",
+      "enabled": true,
+      "verification": "URL文字列と掲載元ページのみ公開サイトから確認。商品名は未確認。"
+    }
+  ]
+}
