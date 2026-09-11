@@ -112,6 +112,78 @@
   scroll-margin-top: 110px;
 }
 
+.article-explainer {
+  width: min(860px, calc(100% + 160px));
+  margin: 30px 0 42px -18px;
+  border: 1px solid #c6ddd6;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #f8fcfa;
+  box-shadow: 0 16px 38px rgba(23, 73, 69, .11);
+}
+
+.article-explainer > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: #eef7f4;
+}
+
+.article-explainer figcaption {
+  padding: 22px 24px 12px;
+}
+
+.article-explainer figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #075c62;
+  font-size: 17px;
+}
+
+.article-explainer figcaption span {
+  color: #466563;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.explainer-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 10px 24px 24px;
+  counter-reset: visual-step;
+}
+
+.explainer-steps li {
+  position: relative;
+  min-height: 74px;
+  padding: 12px 10px 10px 37px;
+  border-radius: 12px;
+  color: #365858;
+  background: #eaf5f1;
+  font-size: 12px;
+  line-height: 1.55;
+  counter-increment: visual-step;
+}
+
+.explainer-steps li::before {
+  content: counter(visual-step);
+  position: absolute;
+  top: 12px;
+  left: 11px;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background: #16898a;
+  font-size: 10px;
+  font-weight: 900;
+}
+
 .article-aside {
   max-height: calc(100vh - 120px);
   overflow-y: auto;
@@ -174,6 +246,11 @@
     max-height: none;
     overflow: visible;
   }
+
+  .article-explainer {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 620px) {
@@ -220,6 +297,28 @@
 
   .visual-toc {
     padding: 18px;
+  }
+
+  .article-explainer {
+    margin: 24px 0 32px;
+    border-radius: 15px;
+  }
+
+  .article-explainer figcaption {
+    padding: 17px 17px 9px;
+  }
+
+  .article-explainer figcaption strong {
+    font-size: 15px;
+  }
+
+  .explainer-steps {
+    grid-template-columns: 1fr;
+    padding: 8px 16px 18px;
+  }
+
+  .explainer-steps li {
+    min-height: 0;
   }
 }
 

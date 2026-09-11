@@ -15,9 +15,17 @@ const visuals = [
   { match: "飼育ノウハウ", file: "care-medaka.jpg", alt: "水草のある水槽で元気に泳ぐメダカ", caption: "実体験から学ぶ飼育の基本" }
 ];
 
+const explainerAssets = [
+  "nitrogen-cycle.jpg",
+  "water-acclimation.jpg",
+  "partial-water-change.jpg",
+  "water-temperature.jpg",
+  "health-observation.jpg"
+];
+
 await mkdir(resolve(DOCS, "assets", "generated"), { recursive: true });
 await copyFile(resolve(SOURCE_ASSETS, "visual-enhancements.css"), resolve(DOCS, "assets", "visual-enhancements.css"));
-for (const visual of [{ file: "hero-medaka.jpg" }, ...visuals]) {
+for (const visual of [{ file: "hero-medaka.jpg" }, ...visuals, ...explainerAssets.map((file) => ({ file }))]) {
   await copyFile(
     resolve(SOURCE_ASSETS, "generated", basename(visual.file)),
     resolve(DOCS, "assets", "generated", basename(visual.file))
@@ -51,6 +59,59 @@ function stripTags(value) {
     .trim();
 }
 
+function explainerMarkup({ key, file, alt, title, description, steps }) {
+  const list = steps.map((step) => `<li>${step}</li>`).join("");
+  return `<figure class="article-explainer" data-visual="${key}"><img src="${BASE}/assets/generated/${file}" alt="${alt}" width="1536" height="1024" loading="lazy" decoding="async"/><figcaption><strong>${title}</strong><span>${description}</span></figcaption><ol class="explainer-steps">${list}</ol></figure>`;
+}
+
+const explainers = [
+  {
+    key: "nitrogen-cycle",
+    file: "nitrogen-cycle.jpg",
+    alt: "水槽内で排泄物がバクテリアに分解され水草や換水へつながる循環図",
+    title: "水槽の中で働く、ろ過バクテリアの循環",
+    description: "排泄物や食べ残しから生じる物質は、ろ材や底床に定着したバクテリアの働きで段階的に変化します。最後は水草の栄養として使われたり、部分換水で水槽外へ排出されたりします。",
+    steps: ["排泄物・食べ残し", "アンモニアから亜硝酸へ", "亜硝酸から硝酸塩へ", "水草の吸収・部分換水"],
+    pattern: /(<p(?:\s+[^>]*)?>[^<]*(?:ろ過バクテリア|バクテリア剤)[^<]*<\/p>)/
+  },
+  {
+    key: "water-acclimation",
+    file: "water-acclimation.jpg",
+    alt: "袋を浮かべる水温合わせから少量ずつ水を加えて移す水合わせの手順",
+    title: "メダカを迎えるときの水温合わせ・水合わせ",
+    description: "急な環境変化を避けるため、最初に水温を合わせ、次に飼育水を少量ずつ加え、最後はメダカだけを静かに移します。",
+    steps: ["袋を浮かべて水温を近づける", "飼育水を少しずつ加える", "時間をかけて水質へ慣らす", "メダカだけを網で移す"],
+    pattern: /(<h2 id="section-\d+">[^<]*(?:水温合わせ|水合わせ)[^<]*<\/h2>)/
+  },
+  {
+    key: "partial-water-change",
+    file: "partial-water-change.jpg",
+    alt: "水槽の一部の水と底床の汚れを抜き準備した水をゆっくり戻す図",
+    title: "環境を急変させない部分換水",
+    description: "水をすべて交換せず、汚れを吸い出しながら一部だけ換えます。ろ材や水草を残すことで、水槽内の環境変化を抑えます。",
+    steps: ["水量とメダカの様子を確認", "底床付近の汚れを吸い出す", "一度に全換水しない", "水温を近づけた水をゆっくり足す"],
+    pattern: /(<h2 id="section-\d+">[^<]*(?:水換え|換水)[^<]*<\/h2>)/
+  },
+  {
+    key: "water-temperature",
+    file: "water-temperature.jpg",
+    alt: "直射日光と冷暖房の風を避け水温を安定させる水槽管理図",
+    title: "水温の急変を防ぐ置き場所と管理",
+    description: "直射日光や冷暖房の風を避け、換水する水も飼育水に近い温度へ整えると、急激な温度変化を防ぎやすくなります。",
+    steps: ["直射日光を避ける", "冷暖房の風を直接当てない", "水温計で毎日確認", "換水する水の温度も合わせる"],
+    pattern: /(<h2 id="section-\d+">[^<]*(?:水温管理|冬越し|夏越し)[^<]*<\/h2>)/
+  },
+  {
+    key: "health-observation",
+    file: "health-observation.jpg",
+    alt: "元気に泳ぐメダカと注意が必要な泳ぎ方や体表を比較する観察図",
+    title: "毎日の観察で見るポイント",
+    description: "泳ぎ方、群れとの距離、食欲、呼吸、ヒレや体表をいつもの状態と比べます。この図は観察点の例であり、病気を断定するものではありません。",
+    steps: ["泳ぎ方と姿勢", "群れから離れていないか", "食欲と呼吸の様子", "ヒレ・体表の変化"],
+    pattern: /(<h2 id="section-\d+">[^<]*(?:観察|症状|異常)[^<]*<\/h2>)/
+  }
+];
+
 function improveArticleStructure(html) {
   const copyStart = html.indexOf('<div class="article-copy">');
   if (copyStart < 0) return html;
@@ -68,12 +129,20 @@ function improveArticleStructure(html) {
   if (articleEnd < 0) return html;
   let sectionNumber = 0;
   const headings = [];
-  const article = html.slice(copyStart, articleEnd).replace(/<h2(?:\s+id="section-\d+")?>([\s\S]*?)<\/h2>/g, (match, label) => {
+  let article = html.slice(copyStart, articleEnd)
+    .replace(/<figure class="article-explainer"[\s\S]*?<\/figure>/g, "")
+    .replace(/<h2(?:\s+id="section-\d+")?>([\s\S]*?)<\/h2>/g, (match, label) => {
     sectionNumber += 1;
     const id = `section-${sectionNumber}`;
     headings.push({ id, label: stripTags(label) });
     return `<h2 id="${id}">${label}</h2>`;
   });
+  let inserted = 0;
+  for (const explainer of explainers) {
+    if (inserted >= 4 || article.includes(`data-visual="${explainer.key}"`) || !explainer.pattern.test(article)) continue;
+    article = article.replace(explainer.pattern, `$1${explainerMarkup(explainer)}`);
+    inserted += 1;
+  }
   html = `${html.slice(0, copyStart)}${article}${html.slice(articleEnd)}`;
 
   if (headings.length >= 2) {
