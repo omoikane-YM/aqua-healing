@@ -157,6 +157,18 @@ function improveArticleStructure(html) {
   const copyStart = html.indexOf('<div class="article-copy">');
   if (copyStart < 0) return html;
 
+  // The imported snapshot can contain accessibility/navigation text at the
+  // beginning of article-copy. It is useful in the original app shell, but it
+  // is not article content and must never be presented as an article summary.
+  html = html.replace(
+    /メイン コンテンツにスキップナビゲーションにスキップAqua Healingホーム🐟 メダカ用品🐠 アクアリウム用品📖 飼育ノウハウ🐟 メダカの病気・異常その他/g,
+    ""
+  );
+  html = html.replace(
+    /(<section class="article-summary">|<div class="article-copy">)\s*<p class="lead">メイン コンテンツにスキップ<\/p><p>ナビゲーションにスキップ<\/p><p class="article-compact-line">Aqua Healing<\/p><p>ホーム🐟 メダカ用品🐠 アクアリウム用品📖 飼育ノウハウ🐟 メダカの病気・異常その他<\/p>/g,
+    "$1"
+  );
+
   const firstHeading = html.indexOf("<h2", copyStart);
   if (firstHeading > copyStart && !html.slice(copyStart, firstHeading).includes('class="article-summary"')) {
     const contentStart = copyStart + '<div class="article-copy">'.length;
