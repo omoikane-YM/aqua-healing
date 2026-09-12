@@ -87,6 +87,105 @@ function stripTags(value) {
     .trim();
 }
 
+function escapeAttribute(value) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function absoluteUrl(path) {
+  if (path === "index.html") return SITE_URL;
+  if (!path.endsWith("/index.html")) return `${SITE_URL}${path.split("/").map(encodeURIComponent).join("/")}`;
+  const segments = path.replace(/\/index\.html$/, "").split("/").map(encodeURIComponent);
+  return `${SITE_URL}${segments.join("/")}/`;
+}
+
+function improveBreadcrumbs(html, path) {
+  if (path === "index.html" || path === "404.html") return html;
+  const title = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "");
+  const parts = decodeURIComponent(path.replace(/\/index\.html$/, "")).split("/");
+  const category = parts[0];
+  const items = [`<a href="${BASE}/">ホーム</a>`];
+  if (parts.length >= 2) items.push(`<a href="${BASE}/${category}">${category}</a>`);
+  items.push(`<span aria-current="page">${escapeAttribute(title)}</span>`);
+  return html.replace(
+    /<div class="breadcrumbs">[\s\S]*?<\/div>/,
+    `<nav class="breadcrumbs" aria-label="パンくずリスト">${items.join('<span aria-hidden="true">›</span>')}</nav>`
+  );
+}
+
+function pageDescription(html, title, existingDescription, path) {
+  if (path === "index.html") {
+    return "実際の飼育経験をもとに、メダカ・水草・アクアリウム用品の選び方と育て方を初心者にも分かりやすく紹介します。";
+  }
+  const cleanedExisting = stripTags(existingDescription ?? "")
+    .replace(/メイン コンテンツにスキップ|ナビゲーションにスキップ|Aqua Healing|ホーム🐟 メダカ用品🐠 アクアリウム用品📖 飼育ノウハウ🐟 メダカの病気・異常その他/g, "")
+    .trim();
+  if (cleanedExisting.length >= 45) return cleanedExisting.slice(0, 155);
+  const summary = html.match(/<section class="article-summary">([\s\S]*?)<\/section>/)?.[1]
+    ?? html.match(/<main>([\s\S]*?)<\/main>/)?.[1]
+    ?? "";
+  const body = stripTags(summary).replace(/この記事の概要/g, "").replace(/\s+/g, " ").trim();
+  const useful = body.startsWith(title) ? body.slice(title.length).trim() : body;
+  if (useful.length >= 45) return useful.slice(0, 155);
+  const article = html.match(/<div class="article-copy">([\s\S]*?)<\/article>/)?.[1] ?? "";
+  const articleText = stripTags(article).replace(/この記事の概要/g, "").replace(/\s+/g, " ").trim();
+  return (articleText || `${title}について、実際の飼育経験をもとに初心者にも分かりやすく解説します。`).slice(0, 155);
+}
+
+function seoMarkup(html, path) {
+  const title = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "Aqua Healing");
+  const existingDescription = html.match(/<meta name="description" content="([^"]*)"\s*\/?>/)?.[1] ?? "";
+  const description = pageDescription(html, title, existingDescription, path);
+  const canonical = absoluteUrl(path);
+  const decodedPath = decodeURIComponent(path.replace(/\/index\.html$/, ""));
+  const parts = decodedPath === "index.html" ? [] : decodedPath.split("/");
+  const isArticle = parts.length >= 2;
+  const image = `${SITE_URL}assets/generated/${visualFor(decodedPath).file}`;
+  const pageTitle = path === "index.html" ? "Aqua Healing｜メダカ・水草・アクアリウム飼育ガイド" : `${title}｜Aqua Healing`;
+
+  html = html
+    .replace(/<title>[\s\S]*?<\/title>/g, "")
+    .replace(/<meta name="description"[^>]*>/g, "")
+    .replace(/<meta name="robots"[^>]*>/g, "")
+    .replace(/<meta property="og:[^"]+"[^>]*>/g, "")
+    .replace(/<meta name="twitter:[^"]+"[^>]*>/g, "")
+    .replace(/<link rel="canonical"[^>]*>/g, "")
+    .replace(/<script type="application\/ld\+json" data-page-seo>[\s\S]*?<\/script>/g, "");
+
+  const breadcrumbItems = [{ "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL }];
+  if (parts.length) {
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      position: 2,
+      name: parts.length === 1 ? title : parts[0],
+      item: parts.length === 1 ? canonical : `${SITE_URL}${encodeURIComponent(parts[0])}/`
+    });
+  }
+  if (parts.length >= 2) breadcrumbItems.push({ "@type": "ListItem", position: 3, name: title, item: canonical });
+
+  const pageEntity = {
+    "@type": isArticle ? "Article" : (parts.length === 1 ? "CollectionPage" : "WebPage"),
+    "@id": `${canonical}#page`,
+    url: canonical,
+    name: title,
+    ...(isArticle ? { headline: title, image: [image], author: { "@id": `${SITE_URL}#organization` }, publisher: { "@id": `${SITE_URL}#organization` } } : {}),
+    description,
+    inLanguage: "ja",
+    isPartOf: { "@id": `${SITE_URL}#website` },
+    breadcrumb: { "@id": `${canonical}#breadcrumb` }
+  };
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [pageEntity, { "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`, itemListElement: breadcrumbItems }]
+  };
+  const robots = path === "404.html" ? "noindex, follow" : "index, follow";
+  const markup = `<title>${escapeAttribute(pageTitle)}</title><meta name="description" content="${escapeAttribute(description)}"/><meta name="robots" content="${robots}"/><link rel="canonical" href="${canonical}"/><meta property="og:locale" content="ja_JP"/><meta property="og:type" content="${isArticle ? "article" : "website"}"/><meta property="og:site_name" content="Aqua Healing"/><meta property="og:title" content="${escapeAttribute(pageTitle)}"/><meta property="og:description" content="${escapeAttribute(description)}"/><meta property="og:url" content="${canonical}"/><meta property="og:image" content="${image}"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="${escapeAttribute(pageTitle)}"/><meta name="twitter:description" content="${escapeAttribute(description)}"/><meta name="twitter:image" content="${image}"/><script type="application/ld+json" data-page-seo>${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>`;
+  return html.replace("</head>", `${markup}</head>`);
+}
+
 function explainerMarkup({ key, file, alt, title, description, steps }) {
   const list = steps.map((step) => `<li>${step}</li>`).join("");
   return `<figure class="article-explainer" data-visual="${key}"><img src="${BASE}/assets/generated/${file}" alt="${alt}" width="1536" height="1024" loading="lazy" decoding="async"/><figcaption><strong>${title}</strong><span>${description}</span></figcaption><ol class="explainer-steps">${list}</ol></figure>`;
@@ -229,6 +328,8 @@ for (const file of await htmlFiles(DOCS)) {
   }
   html = improveArticleStructure(html);
   html = addContextualLinks(html);
+  html = improveBreadcrumbs(html, path);
+  html = seoMarkup(html, path);
   await writeFile(file, html, "utf8");
 }
 

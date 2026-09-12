@@ -2,6 +2,15 @@
 
 実施して確認できた項目だけをチェックする。対象外または確認不能な項目は理由を記録する。
 
+## SEO・検索インデックス
+
+- [ ] 各公開ページのtitle、meta description、canonicalが一意で内容と一致している
+- [ ] 各ページのH1が1つで、見出しと本文の階層が自然である
+- [ ] パンくずとBreadcrumbList構造化データがページ階層と一致している
+- [ ] 内部リンク切れとaltのない画像がない
+- [ ] sitemap.xmlとrobots.txtがGitHub Pagesの正式URLを参照している
+- [ ] `node scripts/audit-seo.mjs` が正常終了している
+
 ## ビルド
 
 - [ ] ビルド成功

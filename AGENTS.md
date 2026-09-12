@@ -63,6 +63,7 @@ Amazon 関連の詳細は `AFFILIATE_RULES.md` に従う。
 
 - 変更前に `SITE_FACTS.md`、`AFFILIATE_RULES.md`、対象実装、既存ワークフローを確認する。
 - サイト本体を変更した場合は原則として `CHANGELOG.md` に追記する。
+- 公開HTMLを変更した場合は `node scripts/audit-seo.mjs` を実行し、title、description、canonical、H1、構造化データ、内部リンク、画像altを確認する。
 - 公開前に `CHECKLIST.md` の該当項目を確認する。
 - ビルド失敗、重大な実行時エラー、重大な表示崩れがある状態を公開しない。
 - 自動確認だけでスマートフォン・PC の表示を確認済みと断定しない。実機または同等のビューポート確認を記録する。

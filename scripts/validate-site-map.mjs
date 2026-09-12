@@ -1,8 +1,9 @@
 import { readFile } from "node:fs/promises";
 
-const expectedOrigin = "https://aqua-healing.gdaye311.chatgpt.site";
-const sitemap = await readFile(new URL("../sitemap.xml", import.meta.url), "utf8");
-const robots = await readFile(new URL("../robots.txt", import.meta.url), "utf8");
+const expectedOrigin = "https://omoikane-ym.github.io";
+const expectedBase = `${expectedOrigin}/aqua-healing`;
+const sitemap = await readFile(new URL("../docs/sitemap.xml", import.meta.url), "utf8");
+const robots = await readFile(new URL("../docs/robots.txt", import.meta.url), "utf8");
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 
 if (!sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')) {
@@ -19,12 +20,12 @@ if (new Set(urls).size !== urls.length) {
 
 for (const value of urls) {
   const url = new URL(value);
-  if (url.origin !== expectedOrigin) {
-    throw new Error(`Unexpected sitemap origin: ${url.origin}`);
+  if (url.origin !== expectedOrigin || !url.pathname.startsWith("/aqua-healing")) {
+    throw new Error(`Unexpected sitemap location: ${value}`);
   }
 }
 
-const sitemapUrl = `${expectedOrigin}/sitemap.xml`;
+const sitemapUrl = `${expectedBase}/sitemap.xml`;
 if (!robots.includes(`Sitemap: ${sitemapUrl}`)) {
   throw new Error(`robots.txt must reference ${sitemapUrl}`);
 }
@@ -43,4 +44,4 @@ if (failures.length > 0) {
   throw new Error(`Unreachable sitemap URLs:\n${failures.join("\n")}`);
 }
 
-console.log(`Validated ${urls.length} unique sitemap URLs on ${expectedOrigin}.`);
+console.log(`Validated ${urls.length} unique sitemap URLs on ${expectedBase}.`);

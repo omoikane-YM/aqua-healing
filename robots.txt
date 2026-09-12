@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Host: https://aqua-healing.gdaye311.chatgpt.site
-Sitemap: https://aqua-healing.gdaye311.chatgpt.site/sitemap.xml
+Host: https://omoikane-ym.github.io/aqua-healing
+Sitemap: https://omoikane-ym.github.io/aqua-healing/sitemap.xml

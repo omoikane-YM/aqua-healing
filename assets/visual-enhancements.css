@@ -9,6 +9,23 @@
   box-shadow: 0 18px 50px rgba(7, 62, 68, .18);
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem;
+}
+
+.breadcrumbs a {
+  text-decoration: underline;
+  text-decoration-color: rgba(8, 120, 122, .28);
+  text-underline-offset: 3px;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: #315b5b;
+}
+
 .visual-banner img {
   display: block;
   width: 100%;
