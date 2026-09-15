@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-09-16
+
+- Google Analytics 4 の Googleタグ（測定ID `G-BJV60JJ3BL`）を全公開ページの `head` 直後へ追加。
+- 公開スナップショットの再生成後にも同じタグを重複なく再適用できるよう、共通整形スクリプトへ設定を追加。
+
 ## 2026-09-12
 
 - 全44公開ページのタイトル、meta description、canonical、OGP、Twitter Cardを静的HTMLのhead内へ統一。

@@ -8,6 +8,15 @@ const STYLE_HREF = `${BASE}/assets/visual-enhancements.css`;
 const SOURCE_ASSETS = resolve(ROOT, "assets");
 const SITE_URL = "https://omoikane-ym.github.io/aqua-healing/";
 const GOOGLE_SITE_VERIFICATION = "tyw1nVZOuPP1l_J-RyQC5CUH0oBVbeXsMvXVX2x2E8A";
+const GOOGLE_ANALYTICS_ID = "G-BJV60JJ3BL";
+const googleAnalyticsMarkup = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${GOOGLE_ANALYTICS_ID}');
+</script>`;
 const siteIdentityMarkup = `<script type="application/ld+json" data-site-identity>${JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
@@ -308,6 +317,11 @@ function improveArticleStructure(html) {
 for (const file of await htmlFiles(DOCS)) {
   const path = relative(DOCS, file).split(sep).join("/");
   let html = await readFile(file, "utf8");
+  html = html.replace(
+    /<!-- Google tag \(gtag\.js\) -->\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=[^"]+"><\/script>\s*<script>[\s\S]*?gtag\('config',\s*'[^']+'\);\s*<\/script>\s*/g,
+    ""
+  );
+  html = html.replace("<head>", `<head>${googleAnalyticsMarkup}`);
   html = html.replace(
     /<meta name="google-site-verification" content="[^"]*"\s*\/?>/g,
     `<meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATION}"/>`
