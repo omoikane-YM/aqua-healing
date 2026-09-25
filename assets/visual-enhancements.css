@@ -154,6 +154,28 @@
   font-weight: 700;
 }
 
+.article-summary-visual {
+  margin: 20px 0 24px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(23, 73, 69, .1);
+}
+
+.article-summary-visual img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.article-summary-visual figcaption {
+  color: #365d5c;
+  padding: 11px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .article-summary {
   margin: 0 0 44px;
   padding: 26px 30px 22px;
@@ -380,6 +402,11 @@
   .article-context-visual {
     margin: 20px 0 30px;
     border-radius: 14px;
+  }
+
+  .article-summary-visual {
+    margin: 16px 0 20px;
+    border-radius: 12px;
   }
 
   .article-explainer figcaption {

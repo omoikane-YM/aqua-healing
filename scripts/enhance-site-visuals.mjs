@@ -64,7 +64,9 @@ const generatedContentAssets = [
   "product-lighting.png", "product-heater.png", "product-filtration.png",
   "product-food.png", "product-plants-substrate.png", "product-care.png",
   "medaka-life-cycle.png", "medaka-health-check.png",
-  "aquatic-plant-growth.png", "algae-green-water.png"
+  "aquatic-plant-growth.png", "algae-green-water.png",
+  "summary-daily-care.png", "summary-breeding.png",
+  "summary-health-care.png", "summary-planted-aquarium.png"
 ];
 
 await mkdir(resolve(DOCS, "assets", "generated"), { recursive: true });
@@ -116,6 +118,44 @@ function categoryVisualFor(relativePath) {
     alt: "水草の間を泳ぐ色とりどりのメダカ",
     caption: "水景がくれる、やすらぎの時間"
   };
+}
+
+function summaryVisualFor(relativePath) {
+  const summaries = [
+    {
+      match: /(?:卵|針子|繁殖|増えすぎ|産まない)/,
+      file: "summary-breeding.png",
+      alt: "産卵床の卵、針子、成魚までを見渡せるメダカ繁殖環境",
+      caption: "卵から針子、成魚までの流れをイメージ"
+    },
+    {
+      match: /(?:病気|異常|白点病|水カビ病|尾ぐされ病|松かさ病|穴あき病|赤斑病|寄生虫|塩浴|死んで)/,
+      file: "summary-health-care.png",
+      alt: "メダカの観察水槽と隔離容器、塩、水温計を用意したケア環境",
+      caption: "観察と早めの環境確認を大切に"
+    },
+    {
+      match: /(?:水草|アクアリウム用品|底床|バクテリア|フィルター|エアーポンプ|ヒーター|LEDライト|コケ|グリーンウォーター|水質)/,
+      file: "summary-planted-aquarium.png",
+      alt: "照明、ろ過、水草、底床を整えた水草水槽の作業環境",
+      caption: "道具と環境のつながりをイメージ"
+    }
+  ];
+  return summaries.find(({ match }) => match.test(relativePath)) ?? {
+    file: "summary-daily-care.png",
+    alt: "メダカ水槽の観察、給餌、水温確認、部分換水を行う日常管理",
+    caption: "毎日の飼育ポイントをひと目で確認"
+  };
+}
+
+function addSummaryVisual(article, path) {
+  article = article.replace(/<figure class="article-summary-visual"[\s\S]*?<\/figure>/g, "");
+  const visual = summaryVisualFor(decodeURIComponent(path));
+  const figure = `<figure class="article-summary-visual"><img src="${BASE}/assets/generated/${visual.file}" alt="${visual.alt}" width="1536" height="1024" loading="lazy" decoding="async"/><figcaption>${visual.caption}</figcaption></figure>`;
+  if (/<section class="article-summary"><p class="lead">/.test(article)) {
+    return article.replace(/(<section class="article-summary"><p class="lead">[\s\S]*?<\/p>)/, `$1${figure}`);
+  }
+  return article.replace('<section class="article-summary">', `<section class="article-summary">${figure}`);
 }
 
 function productVisualClass(title) {
@@ -349,6 +389,7 @@ function improveArticleStructure(html, path) {
     headings.push({ id, label: stripTags(label) });
     return `<h2 id="${id}">${label}</h2>`;
   });
+  article = addSummaryVisual(article, path);
   let inserted = 0;
   for (const explainer of explainers) {
     if (inserted >= 4 || article.includes(`data-visual="${explainer.key}"`) || !explainer.pattern.test(article)) continue;
