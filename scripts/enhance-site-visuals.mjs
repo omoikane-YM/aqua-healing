@@ -60,9 +60,16 @@ const explainerAssets = [
   "health-observation.jpg"
 ];
 
+const generatedContentAssets = [
+  "product-lighting.png", "product-heater.png", "product-filtration.png",
+  "product-food.png", "product-plants-substrate.png", "product-care.png",
+  "medaka-life-cycle.png", "medaka-health-check.png",
+  "aquatic-plant-growth.png", "algae-green-water.png"
+];
+
 await mkdir(resolve(DOCS, "assets", "generated"), { recursive: true });
 await copyFile(resolve(SOURCE_ASSETS, "visual-enhancements.css"), resolve(DOCS, "assets", "visual-enhancements.css"));
-for (const visual of [{ file: "hero-medaka.jpg" }, ...visuals, ...explainerAssets.map((file) => ({ file }))]) {
+for (const visual of [{ file: "hero-medaka.jpg" }, ...visuals, ...explainerAssets.map((file) => ({ file })), ...generatedContentAssets.map((file) => ({ file }))]) {
   await copyFile(
     resolve(SOURCE_ASSETS, "generated", basename(visual.file)),
     resolve(DOCS, "assets", "generated", basename(visual.file))
@@ -80,11 +87,54 @@ async function htmlFiles(directory) {
 }
 
 function visualFor(relativePath) {
+  const pageVisuals = [
+    { match: /(?:卵|針子|繁殖|増えすぎ|産まない)/, file: "medaka-life-cycle.png", alt: "メダカの卵から針子、成魚までの成長サイクル", caption: "成長段階をイメージで確認" },
+    { match: /(?:病気|異常|白点病|水カビ病|尾ぐされ病|松かさ病|穴あき病|赤斑病|寄生虫|塩浴|死んで)/, file: "medaka-health-check.png", alt: "メダカの泳ぎ方やヒレ、体表を観察するポイント", caption: "日々の観察ポイントを確認" },
+    { match: /(?:水草|植え方|照明の選び方)/, file: "aquatic-plant-growth.png", alt: "照明、根、底床、水流を含む水草育成環境", caption: "水草が育つ環境をイメージ" },
+    { match: /(?:コケ|グリーンウォーター)/, file: "algae-green-water.png", alt: "透明な水槽、グリーンウォーター、ガラス面のコケの比較", caption: "水の色とコケの状態を比較" },
+    { match: /(?:ヒーター|LEDライト)/, file: "product-lighting.png", alt: "水草水槽を照らすスリムなLEDライト", caption: "照明の役割をイメージ" },
+    { match: /(?:濾過|フィルター|エアーポンプ)/, file: "product-filtration.png", alt: "水槽用フィルターとエアーポンプのイメージ", caption: "ろ過とエアレーションの基本" },
+    { match: /(?:餌)/, file: "product-food.png", alt: "メダカ用フードの容器と細かな餌のイメージ", caption: "成長段階に合う餌を考える" },
+    { match: /(?:底床)/, file: "product-plants-substrate.png", alt: "水草と水槽用ソイル、砂利のイメージ", caption: "水草と生体に合う底床選び" },
+    { match: /(?:バクテリア|水質)/, file: "nitrogen-cycle.jpg", alt: "水槽内でバクテリアが支える窒素循環", caption: "水槽内の循環を理解する" },
+    { match: /(?:水換え)/, file: "partial-water-change.jpg", alt: "水槽の一部を換水する手順", caption: "急変を避ける部分換水" },
+    { match: /(?:冬越し|夏越し)/, file: "water-temperature.jpg", alt: "季節に応じて水温を管理する水槽", caption: "季節の水温変化に備える" },
+    { match: /(?:初心者|飼い方)/, file: "water-acclimation.jpg", alt: "メダカを水槽へ迎える水合わせの手順", caption: "最初に覚えたい飼育の基本" }
+  ];
+  const pageVisual = pageVisuals.find(({ match }) => match.test(relativePath));
+  if (pageVisual) return pageVisual;
   return visuals.find(({ match }) => relativePath.includes(match)) ?? {
     file: "hero-medaka.jpg",
     alt: "水草の間を泳ぐ色とりどりのメダカ",
     caption: "水景がくれる、やすらぎの時間"
   };
+}
+
+function categoryVisualFor(relativePath) {
+  return visuals.find(({ match }) => relativePath.includes(match)) ?? {
+    file: "hero-medaka.jpg",
+    alt: "水草の間を泳ぐ色とりどりのメダカ",
+    caption: "水景がくれる、やすらぎの時間"
+  };
+}
+
+function productVisualClass(title) {
+  if (/(?:LED|ライト|照明|FLORA|フラッティ)/i.test(title)) return "product-visual-lighting";
+  if (/(?:ヒーター|サーモ)/.test(title)) return "product-visual-heater";
+  if (/(?:フィルター|濾過|ろ過|エアー|ポンプ|ブクブク)/.test(title)) return "product-visual-filtration";
+  if (/(?:餌|エサ|フード|ブライン|ミジンコ|ゾウリムシ)/.test(title)) return "product-visual-food";
+  if (/(?:水草|ソイル|底床|砂利|砂|石|流木|モス|アナカリス|マツモ|アヌビアス)/.test(title)) return "product-visual-plants";
+  return "product-visual-care";
+}
+
+function alignProductVisuals(html) {
+  return html.replace(/<section class="product-card">[\s\S]*?<\/section>/g, (card) => {
+    const title = stripTags(card.match(/<h3>([\s\S]*?)<\/h3>/)?.[1] ?? "");
+    return card.replace(
+      /class="product-photo(?: product-photo-\d+| product-visual-[a-z-]+)?"/,
+      `class="product-photo ${productVisualClass(title)}"`
+    );
+  });
 }
 
 function stripTags(value) {
@@ -261,7 +311,7 @@ function addContextualLinks(html) {
     );
 }
 
-function improveArticleStructure(html) {
+function improveArticleStructure(html, path) {
   const copyStart = html.indexOf('<div class="article-copy">');
   if (copyStart < 0) return html;
 
@@ -292,6 +342,7 @@ function improveArticleStructure(html) {
   const headings = [];
   let article = html.slice(copyStart, articleEnd)
     .replace(/<figure class="article-explainer"[\s\S]*?<\/figure>/g, "")
+    .replace(/<figure class="article-context-visual"[\s\S]*?<\/figure>/g, "")
     .replace(/<h2(?:\s+id="section-\d+")?>([\s\S]*?)<\/h2>/g, (match, label) => {
     sectionNumber += 1;
     const id = `section-${sectionNumber}`;
@@ -303,6 +354,16 @@ function improveArticleStructure(html) {
     if (inserted >= 4 || article.includes(`data-visual="${explainer.key}"`) || !explainer.pattern.test(article)) continue;
     article = article.replace(explainer.pattern, `$1${explainerMarkup(explainer)}`);
     inserted += 1;
+  }
+  const parts = decodeURIComponent(path.replace(/\/index\.html$/, "")).split("/");
+  if (parts.length >= 2) {
+    const visual = visualFor(decodeURIComponent(path));
+    const contextFigure = `<figure class="article-context-visual"><img src="${BASE}/assets/generated/${visual.file}" alt="${visual.alt}" width="1536" height="1024" loading="lazy" decoding="async"/><figcaption>${visual.caption}</figcaption></figure>`;
+    if (/<h2 id="section-1">/.test(article)) {
+      article = article.replace(/(<h2 id="section-1">[\s\S]*?<\/h2>)/, `$1${contextFigure}`);
+    } else {
+      article = article.replace('<section class="article-summary">', `<section class="article-summary">${contextFigure}`);
+    }
   }
   html = `${html.slice(0, copyStart)}${article}${html.slice(articleEnd)}`;
 
@@ -336,11 +397,18 @@ for (const file of await htmlFiles(DOCS)) {
       html = html.replace("</head>", `${siteIdentityMarkup}</head>`);
     }
   } else if (!html.includes('class="visual-banner"')) {
-    const visual = visualFor(decodeURIComponent(path));
+    const visual = categoryVisualFor(decodeURIComponent(path));
     const figure = `<figure class="visual-banner"><img src="${BASE}/assets/generated/${visual.file}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async"/><figcaption>${visual.caption}</figcaption></figure>`;
     html = html.replace(/(<section class="page-hero"[\s\S]*?<\/section>)/, `$1${figure}`);
+  } else if (path !== "index.html" && path !== "404.html") {
+    const visual = categoryVisualFor(decodeURIComponent(path));
+    html = html.replace(
+      /<figure class="visual-banner"><img[^>]*><figcaption>[\s\S]*?<\/figcaption><\/figure>/,
+      `<figure class="visual-banner"><img src="${BASE}/assets/generated/${visual.file}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async"/><figcaption>${visual.caption}</figcaption></figure>`
+    );
   }
-  html = improveArticleStructure(html);
+  html = alignProductVisuals(html);
+  html = improveArticleStructure(html, path);
   html = addContextualLinks(html);
   html = improveBreadcrumbs(html, path);
   html = seoMarkup(html, path);

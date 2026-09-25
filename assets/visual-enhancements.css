@@ -113,6 +113,47 @@
   text-decoration-color: currentColor;
 }
 
+/* Product cards use subject-aware, original category images.  These do not
+   imitate Amazon packaging; they help readers recognise the product type. */
+.product-photo.product-visual-lighting,
+.product-photo.product-visual-heater,
+.product-photo.product-visual-filtration,
+.product-photo.product-visual-food,
+.product-photo.product-visual-plants,
+.product-photo.product-visual-care {
+  background-position: center;
+  background-size: cover;
+}
+
+.product-photo.product-visual-lighting { background-image: url('/aqua-healing/assets/generated/product-lighting.png'); }
+.product-photo.product-visual-heater { background-image: url('/aqua-healing/assets/generated/product-heater.png'); }
+.product-photo.product-visual-filtration { background-image: url('/aqua-healing/assets/generated/product-filtration.png'); }
+.product-photo.product-visual-food { background-image: url('/aqua-healing/assets/generated/product-food.png'); }
+.product-photo.product-visual-plants { background-image: url('/aqua-healing/assets/generated/product-plants-substrate.png'); }
+.product-photo.product-visual-care { background-image: url('/aqua-healing/assets/generated/product-care.png'); }
+
+.article-context-visual {
+  margin: 24px 0 36px;
+  overflow: hidden;
+  border: 1px solid #c7ded5;
+  border-radius: 18px;
+  background: #f4faf7;
+  box-shadow: 0 14px 32px rgba(23, 73, 69, .1);
+}
+
+.article-context-visual img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.article-context-visual figcaption {
+  color: #365d5c;
+  padding: 13px 17px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .article-summary {
   margin: 0 0 44px;
   padding: 26px 30px 22px;
@@ -334,6 +375,11 @@
   .article-explainer {
     margin: 24px 0 32px;
     border-radius: 15px;
+  }
+
+  .article-context-visual {
+    margin: 20px 0 30px;
+    border-radius: 14px;
   }
 
   .article-explainer figcaption {
