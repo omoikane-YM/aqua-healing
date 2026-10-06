@@ -20,8 +20,9 @@
     "privacyPolicy": "present-at-/プライバシーポリシー",
     "disclaimer": "present-at-/免責事項",
     "adsenseDisclosure": "included-in-privacy-policy",
-    "adsensePublisherId": null,
-    "adsTxt": "pending-publisher-id"
+    "adsensePublisherId": "pub-3734732668384938",
+    "adsenseCode": "installed-on-all-published-html-pages",
+    "adsTxt": "cannot-be-served-at-github-pages-host-root-from-project-repository"
   },
   "commonMessages": [],
   "verification": {
