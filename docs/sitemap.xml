@@ -220,4 +220,9 @@
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
+<url>
+<loc>https://omoikane-ym.github.io/aqua-healing/%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85</loc>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
 </urlset>

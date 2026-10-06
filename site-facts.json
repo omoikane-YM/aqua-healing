@@ -18,7 +18,10 @@
   "socialLinks": [],
   "legal": {
     "privacyPolicy": "present-at-/プライバシーポリシー",
-    "disclaimer": "unverified"
+    "disclaimer": "present-at-/免責事項",
+    "adsenseDisclosure": "included-in-privacy-policy",
+    "adsensePublisherId": null,
+    "adsTxt": "pending-publisher-id"
   },
   "commonMessages": [],
   "verification": {
