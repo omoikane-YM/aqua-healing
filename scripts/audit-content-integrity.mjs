@@ -43,8 +43,8 @@ for (const file of htmlFiles) {
     const attributes = match[1];
     const src = attributes.match(/src="([^"]+)"/)?.[1];
     if (!/\balt="[^"]*"/.test(attributes)) failures.push(`${label}: altなし ${src ?? "unknown image"}`);
-    if (!src?.startsWith("/aqua-healing/")) continue;
-    const target = join(DOCS, decodeURIComponent(src.slice("/aqua-healing/".length)));
+    if (!src?.startsWith("/")) continue;
+    const target = join(DOCS, decodeURIComponent(src.slice("/".length)));
     if (!existsSync(target)) failures.push(`${label}: 画像参照切れ ${src}`);
   }
 

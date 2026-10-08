@@ -55,7 +55,7 @@
   isolation: isolate;
   background-image:
     linear-gradient(90deg, rgba(244, 252, 249, .98) 0%, rgba(244, 252, 249, .91) 38%, rgba(244, 252, 249, .24) 72%, rgba(244, 252, 249, .06) 100%),
-    url('/aqua-healing/hero.jpg');
+    url('/hero.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -125,12 +125,12 @@
   background-size: cover;
 }
 
-.product-photo.product-visual-lighting { background-image: url('/aqua-healing/assets/generated/product-lighting.png'); }
-.product-photo.product-visual-heater { background-image: url('/aqua-healing/assets/generated/product-heater.png'); }
-.product-photo.product-visual-filtration { background-image: url('/aqua-healing/assets/generated/product-filtration.png'); }
-.product-photo.product-visual-food { background-image: url('/aqua-healing/assets/generated/product-food.png'); }
-.product-photo.product-visual-plants { background-image: url('/aqua-healing/assets/generated/product-plants-substrate.png'); }
-.product-photo.product-visual-care { background-image: url('/aqua-healing/assets/generated/product-care.png'); }
+.product-photo.product-visual-lighting { background-image: url('/assets/generated/product-lighting.png'); }
+.product-photo.product-visual-heater { background-image: url('/assets/generated/product-heater.png'); }
+.product-photo.product-visual-filtration { background-image: url('/assets/generated/product-filtration.png'); }
+.product-photo.product-visual-food { background-image: url('/assets/generated/product-food.png'); }
+.product-photo.product-visual-plants { background-image: url('/assets/generated/product-plants-substrate.png'); }
+.product-photo.product-visual-care { background-image: url('/assets/generated/product-care.png'); }
 
 .article-context-visual {
   margin: 24px 0 36px;
@@ -367,7 +367,7 @@
   .hero.visual-home-hero {
     background-image:
       linear-gradient(180deg, rgba(244, 252, 249, .96) 0%, rgba(244, 252, 249, .9) 52%, rgba(244, 252, 249, .35) 100%),
-      url('/aqua-healing/hero.jpg');
+      url('/hero.jpg');
     background-position: 62% center;
   }
 
@@ -762,7 +762,7 @@ body::before {
   border-radius: 24px;
   background:
     linear-gradient(rgba(244,250,247,.94), rgba(232,246,240,.94)),
-    url('/aqua-healing/assets/generated/aquatic-plants.jpg') center / cover;
+    url('/assets/generated/aquatic-plants.jpg') center / cover;
   box-shadow: 0 20px 48px rgba(18, 74, 69, .12);
 }
 
@@ -835,13 +835,13 @@ body::before {
   min-height: min(760px, 88vh);
   background-image:
     linear-gradient(90deg, rgba(3, 34, 40, .93) 0%, rgba(4, 57, 61, .75) 42%, rgba(4, 48, 53, .12) 76%),
-    url('/aqua-healing/hero.jpg');
+    url('/hero.jpg');
 }
 
 .hero.visual-home-hero::before {
   background:
     linear-gradient(90deg, rgba(3, 34, 40, .93) 0%, rgba(4, 57, 61, .75) 42%, rgba(4, 48, 53, .12) 76%),
-    url('/aqua-healing/hero.jpg') center / cover;
+    url('/hero.jpg') center / cover;
 }
 
 .hero.visual-home-hero .hero-copy {
@@ -881,10 +881,10 @@ body::before {
   background: linear-gradient(180deg, rgba(4,47,53,.02) 15%, rgba(3,38,43,.9) 100%);
 }
 
-.category-card:nth-child(1) { background-image: url('/aqua-healing/assets/generated/medaka-supplies.jpg'); }
-.category-card:nth-child(2) { background-image: url('/aqua-healing/assets/generated/aquarium-equipment.jpg'); }
-.category-card:nth-child(3) { background-image: url('/aqua-healing/assets/generated/care-medaka.jpg'); }
-.category-card:nth-child(4) { background-image: url('/aqua-healing/assets/generated/health-medaka.jpg'); }
+.category-card:nth-child(1) { background-image: url('/assets/generated/medaka-supplies.jpg'); }
+.category-card:nth-child(2) { background-image: url('/assets/generated/aquarium-equipment.jpg'); }
+.category-card:nth-child(3) { background-image: url('/assets/generated/care-medaka.jpg'); }
+.category-card:nth-child(4) { background-image: url('/assets/generated/health-medaka.jpg'); }
 
 .category-card .icon {
   margin-bottom: auto;
@@ -1082,14 +1082,14 @@ body::before {
     min-height: 650px;
     background-image:
       linear-gradient(180deg, rgba(3, 38, 43, .88), rgba(3, 48, 52, .7) 60%, rgba(3, 38, 43, .34)),
-      url('/aqua-healing/hero.jpg');
+      url('/hero.jpg');
     background-position: 58% center;
   }
 
   .hero.visual-home-hero::before {
     background:
       linear-gradient(180deg, rgba(3, 38, 43, .88), rgba(3, 48, 52, .7) 60%, rgba(3, 38, 43, .34)),
-      url('/aqua-healing/hero.jpg') 58% center / cover;
+      url('/hero.jpg') 58% center / cover;
   }
 
   .category-grid {

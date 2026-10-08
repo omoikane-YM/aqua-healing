@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-10-08
+
+- 公開URLを独自ドメイン `https://aqua-healing.net/` へ移行。
+- GitHub Pages用の `CNAME`、AdSense用の `ads.txt`、canonical、OGP、構造化データ、サイトマップ、robots.txtを独自ドメインへ同期。
+- 独自ドメイン配下で正しく表示できるよう、公開HTML・CSSの内部パスから旧プロジェクトサイトの `/aqua-healing/` 接頭辞を除去。
+
 ## 2026-10-06
 
 - Google AdSenseの正式なサイト確認コード（`ca-pub-3734732668384938`）を全公開HTMLページのheadへ追加。

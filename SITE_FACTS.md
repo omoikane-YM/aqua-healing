@@ -8,7 +8,7 @@
 - ブランチ: `main`
 - 確認時コミット: `8b04a28` (`Initial commit`)
 - リポジトリ内の既存ファイル: `README.md` のみ
-- GitHub Pages URL: `https://omoikane-ym.github.io/aqua-healing/`
+- GitHub Pages URL: `https://aqua-healing.net/`
 - 移行元サイト URL: `https://aqua-healing.gdaye311.chatgpt.site/`
 
 ## サイト名

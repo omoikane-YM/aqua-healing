@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Host: https://omoikane-ym.github.io/aqua-healing
-Sitemap: https://omoikane-ym.github.io/aqua-healing/sitemap.xml
+Host: https://aqua-healing.net
+Sitemap: https://aqua-healing.net/sitemap.xml

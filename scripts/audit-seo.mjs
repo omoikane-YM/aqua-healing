@@ -43,7 +43,7 @@ for (const file of await files(docs)) {
   unique(descriptions, pageDescriptions[0], path, "description");
   unique(canonicals, pageCanonicals[0], path, "canonical");
   if (pageDescriptions[0]?.length < 45 || pageDescriptions[0]?.length > 160) failures.push(`${path}: description length is ${pageDescriptions[0]?.length ?? 0}`);
-  if (pageCanonicals[0] && !pageCanonicals[0].startsWith("https://omoikane-ym.github.io/aqua-healing/")) failures.push(`${path}: invalid canonical host/path`);
+  if (pageCanonicals[0] && !pageCanonicals[0].startsWith("https://aqua-healing.net/")) failures.push(`${path}: invalid canonical host/path`);
   for (const json of structured) {
     try { JSON.parse(json); } catch { failures.push(`${path}: invalid page JSON-LD`); }
   }
