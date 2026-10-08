@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 
-const expectedOrigin = "https://omoikane-ym.github.io";
-const expectedBase = `${expectedOrigin}/aqua-healing`;
+const expectedOrigin = "https://aqua-healing.net";
+const expectedBase = expectedOrigin;
 const sitemap = await readFile(new URL("../docs/sitemap.xml", import.meta.url), "utf8");
 const robots = await readFile(new URL("../docs/robots.txt", import.meta.url), "utf8");
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
@@ -20,7 +20,7 @@ if (new Set(urls).size !== urls.length) {
 
 for (const value of urls) {
   const url = new URL(value);
-  if (url.origin !== expectedOrigin || !url.pathname.startsWith("/aqua-healing")) {
+  if (url.origin !== expectedOrigin) {
     throw new Error(`Unexpected sitemap location: ${value}`);
   }
 }
