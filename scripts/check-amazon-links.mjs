@@ -12,7 +12,8 @@ const TIMEOUT_MS = Number(process.env.AMAZON_LINK_TIMEOUT_MS || 15000);
 const REQUEST_INTERVAL_MS = Number(process.env.AMAZON_LINK_INTERVAL_MS || 1000);
 const MAX_REDIRECTS = 10;
 const UNKNOWN_ISSUE_THRESHOLD = 3;
-const USER_AGENT = "Mozilla/5.0 (compatible; aqua-healing-link-monitor/1.0; +https://github.com/omoikane-YM/aqua-healing)";
+const DEFINITIVE_ERROR_RETRIES = 2;
+const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 AquaHealingLinkCheck/1.0";
 const AMAZON_HOSTS = new Set([
   "amazon.com", "amazon.ca", "amazon.com.mx", "amazon.com.br",
   "amazon.co.uk", "amazon.de", "amazon.fr", "amazon.it", "amazon.es",
@@ -113,7 +114,28 @@ async function checkTarget(target) {
         return { ...target, status: "UNKNOWN", httpStatus: statusCode, finalUrl: current.href, redirects, reason: `Amazon access restriction (HTTP ${statusCode}).` };
       }
       if (statusCode === 404 || statusCode === 410) {
-        return { ...target, status: "BROKEN", httpStatus: statusCode, finalUrl: current.href, redirects, reason: `Definitive HTTP ${statusCode}.` };
+        let confirmedStatus = statusCode;
+        for (let retry = 0; retry < DEFINITIVE_ERROR_RETRIES; retry += 1) {
+          await sleep(1000);
+          const retryResponse = await request(current, "GET");
+          confirmedStatus = retryResponse.status;
+          await retryResponse.body?.cancel();
+          if (confirmedStatus !== 404 && confirmedStatus !== 410) break;
+        }
+        if (confirmedStatus === 403 || confirmedStatus === 429) {
+          return { ...target, status: "UNKNOWN", httpStatus: confirmedStatus, finalUrl: current.href, redirects, reason: `Amazon access restriction during 404/410 recheck (HTTP ${confirmedStatus}).` };
+        }
+        if (confirmedStatus >= 200 && confirmedStatus < 400) {
+          return { ...target, status: "OK", httpStatus: confirmedStatus, finalUrl: current.href, redirects, reason: `Reached an Amazon domain after rechecking transient HTTP ${statusCode}.` };
+        }
+        if (confirmedStatus !== 404 && confirmedStatus !== 410) {
+          return { ...target, status: "WARNING", httpStatus: confirmedStatus, finalUrl: current.href, redirects, reason: `HTTP ${statusCode} changed to ${confirmedStatus} during recheck; manual review recommended.` };
+        }
+        const initialHost = new URL(target.url).hostname.toLowerCase().replace(/^www\./, "");
+        if (initialHost === "link.amazon" || initialHost === "amzn.to") {
+          return { ...target, status: "UNKNOWN", httpStatus: confirmedStatus, finalUrl: current.href, redirects, reason: `Amazon short-link returned client-dependent HTTP ${confirmedStatus} after retries; do not treat as a confirmed broken product link.` };
+        }
+        return { ...target, status: "BROKEN", httpStatus: confirmedStatus, finalUrl: current.href, redirects, reason: `Definitive HTTP ${confirmedStatus} confirmed after ${DEFINITIVE_ERROR_RETRIES} retries.` };
       }
       if (statusCode >= 200 && statusCode < 400) {
         return { ...target, status: "OK", httpStatus: statusCode, finalUrl: current.href, redirects, reason: "Reached an Amazon domain." };
@@ -157,7 +179,7 @@ for (const result of results) {
 }
 
 const counts = Object.fromEntries(["OK", "WARNING", "BROKEN", "UNKNOWN"].map((status) => [status, results.filter((result) => result.status === status).length]));
-const report = { checkedAt: now, configuration: { sources: SOURCES, timeoutMs: TIMEOUT_MS, requestIntervalMs: REQUEST_INTERVAL_MS, maxRedirects: MAX_REDIRECTS, unknownIssueThreshold: UNKNOWN_ISSUE_THRESHOLD }, counts, results };
+const report = { checkedAt: now, configuration: { sources: SOURCES, timeoutMs: TIMEOUT_MS, requestIntervalMs: REQUEST_INTERVAL_MS, maxRedirects: MAX_REDIRECTS, definitiveErrorRetries: DEFINITIVE_ERROR_RETRIES, unknownIssueThreshold: UNKNOWN_ISSUE_THRESHOLD }, counts, results };
 const sections = ["# Amazon Link Check", "", `実行日時: ${now}`, `チェック対象: ${results.length}`, "", ...Object.entries(counts).map(([status, count]) => `- ${status}: ${count}`)];
 for (const status of ["BROKEN", "UNKNOWN", "WARNING", "OK"]) {
   const entries = results.filter((result) => result.status === status);
